@@ -20,6 +20,8 @@ const authRoutes = require('./routes/auth');
 app.use('/auth', authRoutes);
 const resumeRoutes = require('./routes/resume');
 app.use('/resume', resumeRoutes);
+const interviewRoutes = require('./routes/interview');
+app.use('/interview', interviewRoutes);
 
 // ✅ HEALTH CHECK
 app.get('/health', (req, res) => {
